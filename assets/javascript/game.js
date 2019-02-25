@@ -14,34 +14,32 @@
     var guessesLeftText = document.getElementById("guessesleft-text");
     var soFarText = document.getElementById("myguesses-text")
 
+        function reset() {
+            guessesLeft = 10;
+            soFar = 0;
+            guessesMade = []; 
+        }
+
         document.onkeyup = function(event) {
             console.log(event)
         var userGuess = event.key;
 
         var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-
-
-            if (guessesLeft === 0){
-                // guessesLeft  = (10());
-                //  How do i reset the guesses left back to 10 and increase the wins or losses once all the guesses have been used
+            
+        
+        if (guessesLeft === 0){
+                losses++;
+                reset();
             }
             else if (userGuess == computerGuess){
                 wins++;
-                // guessesLeft = 10;
-                // how to reset once there has been a win in the column
+                reset()
             }
             else
             {
                 guessesMade.push(" " + userGuess)
-                losses++;
                 guessesLeft--;
             }
-            // else if (userGuess != computerGuess)
-            // {
-            //     losses++;
-            //     guessesLeft = 10;
-            // }
-            
 
 
             directionsText.textContent = "";
