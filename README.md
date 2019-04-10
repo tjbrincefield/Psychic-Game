@@ -8,8 +8,9 @@
     
     _You have 10 tries to make the guess!_
 
-* If you happen to guess incorrectly too many times, or if you win against the computer - the chances you get to try        will be reset to 10 and you will have the ability to try again.  
+* If you happen to guess incorrectly too many times, or if you win against the computer - the chances you get to try        will be reset to 10 and you will have the ability to try again. 
 
+Please click here to access the game! https://tjbrincefield.github.io/Psychic-Game/
 **The trick of the game is to win more tries against the Computer than the Computer will win against you.**
 
 
